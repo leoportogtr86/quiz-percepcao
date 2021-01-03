@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Quiz de Percepçãp</title>
+</head>
+
+<body>
+    <h1 class="text-center  m-3">Quiz de Percepção Musical</h1>
+    <p class="text-center ">Desenvolvido com 💙 por Leo Porto</p>
+
+    <audio src="./assets/audio/quinta.wav" id="audio"></audio>
+    <lottie-player id="start" src="https://assets5.lottiefiles.com/private_files/lf30_X3jFxM.json"
+        background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+
+
+    <!-- ----------------------------------------------------------------------------------- -->
+    <div class="container animate__animated" id="q1">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+
+                        <h4 class=" text-center">Dê o play e marque que intervalo estamos ouvindo</h4>
+                        <h3 class="text-center m-2">Intervalo 1</h3>
+                        <lottie-player id="acertou" class="d-none"
+                            src="https://assets8.lottiefiles.com/packages/lf20_6LimOm.json" background="transparent"
+                            speed="1" style="width: 300px; height: 300px;" autoplay>
+                        </lottie-player>
+
+                        <lottie-player id="errou" class="d-none"
+                            src="https://assets9.lottiefiles.com/packages/lf20_y8t1nosz.json" background="transparent"
+                            speed="1" style="width: 300px; height: 300px;" autoplay>
+                        </lottie-player>
+                        <lottie-player id="play1" src="https://assets4.lottiefiles.com/packages/lf20_u0kvc1mi.json"
+                            background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay>
+                        </lottie-player>
+                    </div>
+                    <div class="card-body">
+
+                        <h6 class="p-2" id="q1_errada1">1) Sexta maior</h6>
+                        <h6 class="p-2" id="q1_certa">2) Quinta justa</h6>
+                        <h6 class="p-2" id="q1_errada2">3) Terça menor</h6>
+                        <h6 class="p-2" id="q1_errada3">4) Sétima menor</h6>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------- -->
+    <!-- ----------------------------------------------------------------------------------- -->
+    <div class="container animate__animated" id="q2">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+
+                        <h4 class=" text-center">Dê o play e marque que intervalo estamos ouvindo</h4>
+                        <h3 class="text-center m-2">Intervalo 2</h3>
+                        <lottie-player id="acertou2" class="d-none"
+                            src="https://assets8.lottiefiles.com/packages/lf20_6LimOm.json" background="transparent"
+                            speed="1" style="width: 300px; height: 300px;" autoplay>
+                        </lottie-player>
+
+                        <lottie-player id="errou2" class="d-none"
+                            src="https://assets9.lottiefiles.com/packages/lf20_y8t1nosz.json" background="transparent"
+                            speed="1" style="width: 300px; height: 300px;" autoplay>
+                        </lottie-player>
+                        <lottie-player id="play2" src="https://assets4.lottiefiles.com/packages/lf20_u0kvc1mi.json"
+                            background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay>
+                        </lottie-player>
+                    </div>
+                    <div class="card-body">
+
+                        <h6 class="p-2" id="q2_errada1">1) Segunda maior</h6>
+                        <h6 class="p-2" id="q2_certa">2) Quinta aumentada</h6>
+                        <h6 class="p-2" id="q2_errada2">3) Quarta Justa</h6>
+                        <h6 class="p-2" id="q2_errada3">4) Sétima maior</h6>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------------------------------------------------------- -->
+    <div class="container animate__animated" id="q3">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+
+                        <h4 class=" text-center">Dê o play e marque que intervalo estamos ouvindo</h4>
+                        <h3 class="text-center m-2">Intervalo 3</h3>
+                        <lottie-player id="acertou3" class="d-none"
+                            src="https://assets8.lottiefiles.com/packages/lf20_6LimOm.json" background="transparent"
+                            speed="1" style="width: 300px; height: 300px;" autoplay>
+                        </lottie-player>
+
+                        <lottie-player id="errou3" class="d-none"
+                            src="https://assets9.lottiefiles.com/packages/lf20_y8t1nosz.json" background="transparent"
+                            speed="1" style="width: 300px; height: 300px;" autoplay>
+                        </lottie-player>
+                        <lottie-player id="play3" src="https://assets4.lottiefiles.com/packages/lf20_u0kvc1mi.json"
+                            background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay>
+                        </lottie-player>
+                    </div>
+                    <div class="card-body">
+
+                        <h6 class="p-2" id="q3_errada1">1) Sexta menor</h6>
+                        <h6 class="p-2" id="q3_errada2">2) Terça maior</h6>
+                        <h6 class="p-2" id="q3_certa">3) Terça menor</h6>
+                        <h6 class="p-2" id="q3_errada3">4) Sétima diminuta</h6>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------------------------------------------------------- -->
+    <div class="container animate__animated" id="q4">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+
+                        <h4 class=" text-center">Dê o play e marque que intervalo estamos ouvindo</h4>
+                        <h3 class="text-center m-2">Intervalo 4</h3>
+                        <lottie-player id="acertou4" class="d-none"
+                            src="https://assets8.lottiefiles.com/packages/lf20_6LimOm.json" background="transparent"
+                            speed="1" style="width: 300px; height: 300px;" autoplay>
+                        </lottie-player>
+
+                        <lottie-player id="errou4" class="d-none"
+                            src="https://assets9.lottiefiles.com/packages/lf20_y8t1nosz.json" background="transparent"
+                            speed="1" style="width: 300px; height: 300px;" autoplay>
+                        </lottie-player>
+                        <lottie-player id="play4" src="https://assets4.lottiefiles.com/packages/lf20_u0kvc1mi.json"
+                            background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay>
+                        </lottie-player>
+                    </div>
+                    <div class="card-body">
+
+                        <h6 class="p-2" id="q4_errada1">1) Oitava justa</h6>
+                        <h6 class="p-2" id="q4_errada3">2) Quarta aumentada</h6>
+                        <h6 class="p-2" id="q4_errada2">3) Terça maior</h6>
+                        <h6 class="p-2" id="q4_certa">4) Segunda menor</h6>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------------------------------------------------------- -->
+    <div class="container animate__animated" id="q5">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+
+                        <h4 class=" text-center">Dê o play e marque que intervalo estamos ouvindo</h4>
+                        <h3 class="text-center m-2">Intervalo 5</h3>
+                        <lottie-player id="acertou5" class="d-none"
+                            src="https://assets8.lottiefiles.com/packages/lf20_6LimOm.json" background="transparent"
+                            speed="1" style="width: 300px; height: 300px;" autoplay>
+                        </lottie-player>
+
+                        <lottie-player id="errou5" class="d-none"
+                            src="https://assets9.lottiefiles.com/packages/lf20_y8t1nosz.json" background="transparent"
+                            speed="1" style="width: 300px; height: 300px;" autoplay>
+                        </lottie-player>
+                        <lottie-player id="play5" src="https://assets4.lottiefiles.com/packages/lf20_u0kvc1mi.json"
+                            background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay>
+                        </lottie-player>
+                    </div>
+                    <div class="card-body">
+
+                        <h6 class="p-2" id="q5_errada1">1) Sexta aumentada</h6>
+                        <h6 class="p-2" id="q5_errada3">2) Quinta diminuta</h6>
+                        <h6 class="p-2" id="q5_errada2">3) Segunda aumentada</h6>
+                        <h6 class="p-2" id="q5_certa">4) Sétima menor</h6>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------------------------------------------------------- -->
+    <div class="container animate__animated" id="q6">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+
+                        <h4 class=" text-center">Dê o play e marque que intervalo estamos ouvindo</h4>
+                        <h3 class="text-center m-2">Intervalo 6</h3>
+                        <lottie-player id="acertou6" class="d-none"
+                            src="https://assets8.lottiefiles.com/packages/lf20_6LimOm.json" background="transparent"
+                            speed="1" style="width: 300px; height: 300px;" autoplay>
+                        </lottie-player>
+
+                        <lottie-player id="errou6" class="d-none"
+                            src="https://assets9.lottiefiles.com/packages/lf20_y8t1nosz.json" background="transparent"
+                            speed="1" style="width: 300px; height: 300px;" autoplay>
+                        </lottie-player>
+                        <lottie-player id="play6" src="https://assets4.lottiefiles.com/packages/lf20_u0kvc1mi.json"
+                            background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay>
+                        </lottie-player>
+                    </div>
+                    <div class="card-body">
+
+                        <h6 class="p-2" id="q6_errada1">1) Sétima menor</h6>
+                        <h6 class="p-2" id="q6_errada2">2) Quinta justa</h6>
+                        <h6 class="p-2" id="q6_certa">3) Sexta maior</h6>
+                        <h6 class="p-2" id="q6_errada3">4) Terça menor</h6>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------------------------------------------------------- -->
+    <div class="container animate__animated" id="q7">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+
+                        <h4 class=" text-center">Dê o play e marque que intervalo estamos ouvindo</h4>
+                        <h3 class="text-center m-2">Intervalo 7</h3>
+                        <lottie-player id="acertou7" class="d-none"
+                            src="https://assets8.lottiefiles.com/packages/lf20_6LimOm.json" background="transparent"
+                            speed="1" style="width: 300px; height: 300px;" autoplay>
+                        </lottie-player>
+
+                        <lottie-player id="errou7" class="d-none"
+                            src="https://assets9.lottiefiles.com/packages/lf20_y8t1nosz.json" background="transparent"
+                            speed="1" style="width: 300px; height: 300px;" autoplay>
+                        </lottie-player>
+                        <lottie-player id="play7" src="https://assets4.lottiefiles.com/packages/lf20_u0kvc1mi.json"
+                            background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay>
+                        </lottie-player>
+                    </div>
+                    <div class="card-body">
+
+                        <h6 class="p-2" id="q7_errada1">1) Quarta diminuta</h6>
+                        <h6 class="p-2" id="q7_errada2">2) Quinta justa</h6>
+                        <h6 class="p-2" id="q7_certa">3) Terça maior</h6>
+                        <h6 class="p-2" id="q7_errada3">4) Sétima menor</h6>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------------------------------------------------------- -->
+    <div class="container animate__animated" id="q8">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+
+                        <h4 class=" text-center">Dê o play e marque que intervalo estamos ouvindo</h4>
+                        <h3 class="text-center m-2">Intervalo 8</h3>
+                        <lottie-player id="acertou8" class="d-none"
+                            src="https://assets8.lottiefiles.com/packages/lf20_6LimOm.json" background="transparent"
+                            speed="1" style="width: 300px; height: 300px;" autoplay>
+                        </lottie-player>
+
+                        <lottie-player id="errou8" class="d-none"
+                            src="https://assets9.lottiefiles.com/packages/lf20_y8t1nosz.json" background="transparent"
+                            speed="1" style="width: 300px; height: 300px;" autoplay>
+                        </lottie-player>
+                        <lottie-player id="play8" src="https://assets4.lottiefiles.com/packages/lf20_u0kvc1mi.json"
+                            background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay>
+                        </lottie-player>
+                    </div>
+                    <div class="card-body">
+
+                        <h6 class="p-2" id="q8_errada1">1) Sexta maior</h6>
+                        <h6 class="p-2" id="q8_errada2">2) Quinta justa</h6>
+                        <h6 class="p-2" id="q8_certa">3) Terça menor</h6>
+                        <h6 class="p-2" id="q8_errada3">4) Sétima menor</h6>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------------------------------------------------------- -->
+    <div class="container animate__animated" id="q9">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+
+                        <h4 class=" text-center">Dê o play e marque que intervalo estamos ouvindo</h4>
+                        <h3 class="text-center m-2">Intervalo 9</h3>
+                        <lottie-player id="acertou9" class="d-none"
+                            src="https://assets8.lottiefiles.com/packages/lf20_6LimOm.json" background="transparent"
+                            speed="1" style="width: 300px; height: 300px;" autoplay>
+                        </lottie-player>
+
+                        <lottie-player id="errou9" class="d-none"
+                            src="https://assets9.lottiefiles.com/packages/lf20_y8t1nosz.json" background="transparent"
+                            speed="1" style="width: 300px; height: 300px;" autoplay>
+                        </lottie-player>
+                        <lottie-player id="play9" src="https://assets4.lottiefiles.com/packages/lf20_u0kvc1mi.json"
+                            background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay>
+                        </lottie-player>
+                    </div>
+                    <div class="card-body">
+
+                        <h6 class="p-2" id="q9_errada1">1) Sexta maior</h6>
+                        <h6 class="p-2" id="q9_certa">2) Quinta diminuta</h6>
+                        <h6 class="p-2" id="q9_errada2">3) Terça menor</h6>
+                        <h6 class="p-2" id="q9_errada3">4) Sexta menor</h6>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------------------------------------------------------- -->
+    <div class="container animate__animated" id="q10">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+
+                        <h4 class=" text-center">Dê o play e marque que intervalo estamos ouvindo</h4>
+                        <h3 class="text-center m-2">Intervalo 10</h3>
+                        <lottie-player id="acertou10" class="d-none"
+                            src="https://assets8.lottiefiles.com/packages/lf20_6LimOm.json" background="transparent"
+                            speed="1" style="width: 300px; height: 300px;" autoplay>
+                        </lottie-player>
+
+                        <lottie-player id="errou10" class="d-none"
+                            src="https://assets9.lottiefiles.com/packages/lf20_y8t1nosz.json" background="transparent"
+                            speed="1" style="width: 300px; height: 300px;" autoplay>
+                        </lottie-player>
+                        <lottie-player id="play10" src="https://assets4.lottiefiles.com/packages/lf20_u0kvc1mi.json"
+                            background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay>
+                        </lottie-player>
+                    </div>
+                    <div class="card-body">
+
+                        <h6 class="p-2" id="q10_certa">1) Sexta maior</h6>
+                        <h6 class="p-2" id="q10_errada1">2) Quinta justa</h6>
+                        <h6 class="p-2" id="q10_errada2">3) Terça menor</h6>
+                        <h6 class="p-2" id="q10_errada3">4) Sétima menor</h6>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-none" id="resultado">
+        <h1 class="text-center text-danger">Resultado</h1>
+
+        <div class="row">
+
+            <div class="col">
+                <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_IyjgFt.json" background="transparent"
+                    speed="1" style="width: 200px; height: 200px;" loop autoplay></lottie-player>
+                <h2 class="text-center text-success">Corretas</h2>
+                <h2 class="text-center text-success" id="placar_acertos"></h2>
+
+            </div>
+            <div class="col">
+                <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_1ZS2FQ.json" background="transparent"
+                    speed="1" style="width: 200px; height: 200px;" loop autoplay></lottie-player>
+                <h2 class="text-center text-danger">Erradas</h2>
+                <h2 class="text-center text-danger" id="placar_erros"></h2>
+
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.74/Tone.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
