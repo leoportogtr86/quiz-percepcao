@@ -61,7 +61,6 @@ let q10_errada2 = document.querySelector('#q10_errada2')
 let q10_errada3 = document.querySelector('#q10_errada3')
 let q10_certa = document.querySelector('#q10_certa')
 
-let audio = document.querySelector('#audio')
 let q1 = document.querySelector('#q1')
 let q2 = document.querySelector('#q2')
 let q3 = document.querySelector('#q3')
@@ -116,6 +115,17 @@ let errou9 = document.querySelector('#errou9')
 let errou10 = document.querySelector('#errou10')
 
 
+function tocarIntervalo(n1, n2) {
+
+    synth.triggerAttackRelease(n1, '4n')
+    setTimeout(() => {
+
+        synth.triggerAttackRelease(n2, '4n')
+
+    }, 1000);
+
+}
+
 
 
 start.onclick = () => {
@@ -132,7 +142,6 @@ q1_errada1.onclick = () => {
     incorretas++
 
     errou.classList.remove('d-none')
-    audio.src = './assets/audio/quinta_diminuta.wav'
 
     setTimeout(() => {
 
@@ -152,7 +161,6 @@ q1_errada2.onclick = () => {
     incorretas++
 
     errou.classList.remove('d-none')
-    audio.src = './assets/audio/quinta_diminuta.wav'
     setTimeout(() => {
 
         q1.classList.add('animate__backOutDown')
@@ -170,7 +178,6 @@ q1_errada3.onclick = () => {
     incorretas++
 
     errou.classList.remove('d-none')
-    audio.src = './assets/audio/quinta_diminuta.wav'
     setTimeout(() => {
 
         q1.classList.add('animate__backOutDown')
@@ -189,7 +196,6 @@ q1_certa.onclick = () => {
     corretas++
 
     acertou.classList.remove('d-none')
-    audio.src = './assets/audio/quinta_diminuta.wav'
     setTimeout(() => {
 
         q1.classList.add('animate__backOutDown')
@@ -206,7 +212,10 @@ q1_certa.onclick = () => {
 
 play1.onclick = () => {
 
-    audio.play()
+    tocarIntervalo('C4', 'G4')
+
+
+
 }
 
 //-----------------------------------------------------------------
@@ -219,7 +228,6 @@ q2_errada1.onclick = () => {
 
     errou.classList.remove('d-none')
     errou2.classList.remove('d-none')
-    audio.src = './assets/audio/terca_menor.wav'
 
     setTimeout(() => {
 
@@ -238,7 +246,6 @@ q2_errada2.onclick = () => {
     incorretas++
 
     errou.classList.remove('d-none')
-    audio.src = './assets/audio/terca_menor.wav'
     errou2.classList.remove('d-none')
     setTimeout(() => {
 
@@ -257,7 +264,6 @@ q2_errada3.onclick = () => {
     incorretas++
 
     errou.classList.remove('d-none')
-    audio.src = './assets/audio/terca_menor.wav'
     errou2.classList.remove('d-none')
     setTimeout(() => {
 
@@ -277,7 +283,6 @@ q2_certa.onclick = () => {
     corretas++
 
     acertou.classList.remove('d-none')
-    audio.src = './assets/audio/terca_menor.wav'
     acertou2.classList.remove('d-none')
     setTimeout(() => {
 
@@ -295,7 +300,7 @@ q2_certa.onclick = () => {
 
 play2.onclick = () => {
 
-    audio.play()
+    tocarIntervalo('G3', 'D#4')
 }
 
 //-----------------------------------------------------------------
@@ -307,7 +312,6 @@ q3_errada1.onclick = () => {
 
     errou.classList.remove('d-none')
     errou3.classList.remove('d-none')
-    audio.src = './assets/audio/segunda_menor.wav'
 
 
     setTimeout(() => {
@@ -327,7 +331,6 @@ q3_errada2.onclick = () => {
     incorretas++
 
     errou.classList.remove('d-none')
-    audio.src = './assets/audio/segunda_menor.wav'
 
     errou3.classList.remove('d-none')
     setTimeout(() => {
@@ -348,7 +351,6 @@ q3_errada3.onclick = () => {
 
     errou.classList.remove('d-none')
     errou3.classList.remove('d-none')
-    audio.src = './assets/audio/segunda_menor.wav'
 
     setTimeout(() => {
 
@@ -369,7 +371,6 @@ q3_certa.onclick = () => {
 
     acertou.classList.remove('d-none')
     acertou3.classList.remove('d-none')
-    audio.src = './assets/audio/segunda_menor.wav'
 
     setTimeout(() => {
 
@@ -387,7 +388,9 @@ q3_certa.onclick = () => {
 
 play3.onclick = () => {
 
-    audio.play()
+    tocarIntervalo('D4', 'F4')
+
+
 }
 
 //-----------------------------------------------------------------
@@ -399,7 +402,6 @@ q4_errada1.onclick = () => {
     incorretas++
     errou.classList.remove('d-none')
     errou4.classList.remove('d-none')
-    audio.src = './assets/audio/setima_menor.wav'
 
 
     setTimeout(() => {
@@ -418,7 +420,6 @@ q4_errada1.onclick = () => {
 q4_errada2.onclick = () => {
     incorretas++
     errou.classList.remove('d-none')
-    audio.src = './assets/audio/setima_menor.wav'
 
     errou4.classList.remove('d-none')
     setTimeout(() => {
@@ -437,7 +438,6 @@ q4_errada2.onclick = () => {
 q4_errada3.onclick = () => {
     incorretas++
     errou.classList.remove('d-none')
-    audio.src = './assets/audio/setima_menor.wav'
 
     errou4.classList.remove('d-none')
     setTimeout(() => {
@@ -457,7 +457,6 @@ q4_errada3.onclick = () => {
 q4_certa.onclick = () => {
 
     acertou.classList.remove('d-none')
-    audio.src = './assets/audio/setima_menor.wav'
     corretas++
 
     acertou4.classList.remove('d-none')
@@ -477,7 +476,9 @@ q4_certa.onclick = () => {
 
 play4.onclick = () => {
 
-    audio.play()
+    tocarIntervalo('C4', 'C#4')
+
+
 }
 
 //-----------------------------------------------------------------
@@ -488,7 +489,6 @@ q5_errada1.onclick = () => {
     incorretas++
     errou.classList.remove('d-none')
     errou5.classList.remove('d-none')
-    audio.src = './assets/audio/sexta_maior2.wav'
 
 
 
@@ -508,7 +508,6 @@ q5_errada1.onclick = () => {
 q5_errada2.onclick = () => {
     incorretas++
     errou.classList.remove('d-none')
-    audio.src = './assets/audio/sexta_maior2.wav'
 
     errou5.classList.remove('d-none')
 
@@ -528,7 +527,6 @@ q5_errada2.onclick = () => {
 q5_errada3.onclick = () => {
     incorretas++
     errou.classList.remove('d-none')
-    audio.src = './assets/audio/sexta_maior2.wav'
 
     errou5.classList.remove('d-none')
 
@@ -548,7 +546,6 @@ q5_errada3.onclick = () => {
 
 q5_certa.onclick = () => {
     acertou.classList.remove('d-none')
-    audio.src = './assets/audio/sexta_maior2.wav'
     corretas++
 
     acertou5.classList.remove('d-none')
@@ -569,7 +566,9 @@ q5_certa.onclick = () => {
 
 play5.onclick = () => {
 
-    audio.play()
+    tocarIntervalo('G3', 'F4')
+
+
 }
 
 //-----------------------------------------------------------------
@@ -581,7 +580,6 @@ q6_errada1.onclick = () => {
 
     errou.classList.remove('d-none')
     errou6.classList.remove('d-none')
-    audio.src = './assets/audio/terca_maior.wav'
 
 
 
@@ -602,7 +600,6 @@ q6_errada2.onclick = () => {
     incorretas++
 
     errou.classList.remove('d-none')
-    audio.src = './assets/audio/terca_maior.wav'
 
     errou6.classList.remove('d-none')
 
@@ -623,7 +620,6 @@ q6_errada3.onclick = () => {
     incorretas++
 
     errou.classList.remove('d-none')
-    audio.src = './assets/audio/terca_maior.wav'
 
     errou6.classList.remove('d-none')
 
@@ -645,7 +641,6 @@ q6_certa.onclick = () => {
     corretas++
 
     acertou.classList.remove('d-none')
-    audio.src = './assets/audio/terca_maior.wav'
 
     acertou6.classList.remove('d-none')
 
@@ -665,7 +660,9 @@ q6_certa.onclick = () => {
 
 play6.onclick = () => {
 
-    audio.play()
+    tocarIntervalo('D4', 'B4')
+
+
 }
 
 //-----------------------------------------------------------------
@@ -676,7 +673,6 @@ q7_errada1.onclick = () => {
     incorretas++
 
     errou7.classList.remove('d-none')
-    audio.src = './assets/audio/terca_menor2.wav'
 
 
     setTimeout(() => {
@@ -696,7 +692,6 @@ q7_errada2.onclick = () => {
     incorretas++
 
     errou7.classList.remove('d-none')
-    audio.src = './assets/audio/terca_menor2.wav'
 
     setTimeout(() => {
 
@@ -715,7 +710,6 @@ q7_errada3.onclick = () => {
     incorretas++
 
     errou7.classList.remove('d-none')
-    audio.src = './assets/audio/terca_menor2.wav'
 
     setTimeout(() => {
 
@@ -735,7 +729,6 @@ q7_certa.onclick = () => {
     corretas++
 
     acertou7.classList.remove('d-none')
-    audio.src = './assets/audio/terca_menor2.wav'
 
     setTimeout(() => {
 
@@ -753,7 +746,9 @@ q7_certa.onclick = () => {
 
 play7.onclick = () => {
 
-    audio.play()
+    tocarIntervalo('Bb3', 'D4')
+
+
 }
 
 //-----------------------------------------------------------------
@@ -764,7 +759,6 @@ q8_errada1.onclick = () => {
     incorretas++
 
     errou8.classList.remove('d-none')
-    audio.src = './assets/audio/quinta_diminuta.wav'
 
 
     setTimeout(() => {
@@ -784,7 +778,6 @@ q8_errada2.onclick = () => {
     incorretas++
 
     errou8.classList.remove('d-none')
-    audio.src = './assets/audio/quinta_diminuta.wav'
 
     setTimeout(() => {
 
@@ -803,7 +796,6 @@ q8_errada3.onclick = () => {
     incorretas++
 
     errou8.classList.remove('d-none')
-    audio.src = './assets/audio/quinta_diminuta.wav'
 
     setTimeout(() => {
 
@@ -823,7 +815,6 @@ q8_certa.onclick = () => {
     corretas++
 
     acertou8.classList.remove('d-none')
-    audio.src = './assets/audio/quinta_diminuta.wav'
 
     setTimeout(() => {
 
@@ -841,7 +832,9 @@ q8_certa.onclick = () => {
 
 play8.onclick = () => {
 
-    audio.play()
+    tocarIntervalo('G4', 'Bb4')
+
+
 }
 
 //-----------------------------------------------------------------
@@ -852,7 +845,6 @@ q9_errada1.onclick = () => {
     incorretas++
 
     errou9.classList.remove('d-none')
-    audio.src = './assets/audio/sexta_maior2.wav'
 
 
     setTimeout(() => {
@@ -872,7 +864,6 @@ q9_errada2.onclick = () => {
     incorretas++
 
     errou9.classList.remove('d-none')
-    audio.src = './assets/audio/sexta_maior2.wav'
 
     setTimeout(() => {
 
@@ -891,7 +882,6 @@ q9_errada3.onclick = () => {
     incorretas++
 
     errou9.classList.remove('d-none')
-    audio.src = './assets/audio/sexta_maior2.wav'
 
     setTimeout(() => {
 
@@ -911,7 +901,6 @@ q9_certa.onclick = () => {
     corretas++
 
     acertou9.classList.remove('d-none')
-    audio.src = './assets/audio/sexta_maior2.wav'
 
     setTimeout(() => {
 
@@ -929,7 +918,9 @@ q9_certa.onclick = () => {
 
 play9.onclick = () => {
 
-    audio.play()
+    tocarIntervalo('A4', 'Eb5')
+
+
 }
 
 //-----------------------------------------------------------------
@@ -1025,7 +1016,9 @@ q10_certa.onclick = () => {
 
 play10.onclick = () => {
 
-    audio.play()
+    tocarIntervalo('A3', 'F#4')
+
+
 }
 
 //-----------------------------------------------------------------
